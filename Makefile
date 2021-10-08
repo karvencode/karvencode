@@ -12,5 +12,5 @@ server: $(OBJS)
 	$(CC) $(OBJS) -o bin/server -I $(INCPATH)
 
 clean:
-	rm bin/*
-	rm src/*.o
+	-rm -f src/*.o
+	-rm -f bin/*
